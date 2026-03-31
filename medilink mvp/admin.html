@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLink Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="ph ph-heartbeat" style="font-size: 32px; color: var(--primary);"></i>
+            <h2>MediLink</h2>
+            <span class="badge">Admin</span>
+        </div>
+        <nav class="side-nav">
+            <a href="#" class="active"><i class="ph ph-squares-four"></i> Dashboard</a>
+            <a href="#"><i class="ph ph-users"></i> Users</a>
+            <a href="#"><i class="ph ph-stethoscope"></i> Doctors</a>
+            <a href="#"><i class="ph ph-calendar"></i> Appointments</a>
+            <a href="#"><i class="ph ph-pill"></i> Pharmacy Orders</a>
+            <a href="#"><i class="ph ph-gear"></i> Settings</a>
+        </nav>
+        <div style="margin-top: auto; padding: 24px;">
+            <a href="index.html" class="btn btn-secondary" style="width: 100%; text-align: center; text-decoration: none; display: block;">Back to App</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <h1>Dashboard Overview</h1>
+            <div class="user-info">
+                <i class="ph ph-bell" style="font-size: 24px; color: var(--text-muted); margin-right: 16px; cursor: pointer;"></i>
+                <img src="https://i.pravatar.cc/150?u=admin" alt="Admin" width="40" height="40" style="border-radius: 50%;">
+                <span style="font-weight: 500;">Super Admin</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #e0f2fe; color: #0284c7;"><i class="ph ph-users"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Users</h3>
+                        <p>12,450</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #d1fae5; color: #059669;"><i class="ph ph-stethoscope"></i></div>
+                    <div class="stat-info">
+                        <h3>Active Doctors</h3>
+                        <p>342</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #fef3c7; color: #d97706;"><i class="ph ph-calendar"></i></div>
+                    <div class="stat-info">
+                        <h3>Appointments Today</h3>
+                        <p>89</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #fee2e2; color: #dc2626;"><i class="ph ph-pill"></i></div>
+                    <div class="stat-info">
+                        <h3>Pharmacy Orders</h3>
+                        <p>412</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Appointments Table -->
+            <div class="table-card">
+                <h2 style="margin-bottom: 16px; font-size: 18px;">Recent Appointments</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Patient Name</th>
+                            <th>Doctor</th>
+                            <th>Date & Time</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Azizbek K.</td>
+                            <td>Dr. Timur Abdullaev</td>
+                            <td>Oct 14, 2026 - 09:00 AM</td>
+                            <td><span class="status active">Confirmed</span></td>
+                            <td><button class="btn-icon"><i class="ph ph-dots-three"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Malika R.</td>
+                            <td>Dr. Jasmina A.</td>
+                            <td>Oct 14, 2026 - 10:30 AM</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><button class="btn-icon"><i class="ph ph-dots-three"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>Doston N.</td>
+                            <td>Dr. Sardor M.</td>
+                            <td>Oct 14, 2026 - 11:15 AM</td>
+                            <td><span class="status active">Confirmed</span></td>
+                            <td><button class="btn-icon"><i class="ph ph-dots-three"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

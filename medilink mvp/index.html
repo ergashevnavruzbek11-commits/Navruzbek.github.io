@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLink MVP</title>
+    <!-- Use Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Load Phosphor Icons for medical and app icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Render App Here -->
+        <div id="router-view"></div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="bottom-nav" id="bottom-nav">
+        <button class="nav-item active" data-route="/">
+            <i class="ph ph-house"></i>
+            <span>Home</span>
+        </button>
+        <button class="nav-item" data-route="/doctors">
+            <i class="ph ph-stethoscope"></i>
+            <span>Doctors</span>
+        </button>
+        <button class="nav-item" data-route="/ai-chat">
+            <i class="ph ph-robot"></i>
+            <span>AI Chat</span>
+        </button>
+        <button class="nav-item" data-route="/pharmacy">
+            <i class="ph ph-pill"></i>
+            <span>Pharmacy</span>
+        </button>
+        <button class="nav-item" data-route="/profile">
+            <i class="ph ph-user"></i>
+            <span>Profile</span>
+        </button>
+    </nav>
+
+    <!-- Fallback if JS fails -->
+    <noscript>Please enable Javascript to use MediLink.</noscript>
+
+    <!-- App Scripts -->
+    <script src="js/pages/home.js"></script>
+    <script src="js/pages/doctors.js"></script>
+    <script src="js/pages/ai-chat.js"></script>
+    <script src="js/pages/pharmacy.js"></script>
+    <script src="js/pages/profile.js"></script>
+    <script src="js/pages/book.js"></script>
+    <script src="js/pages/login.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
